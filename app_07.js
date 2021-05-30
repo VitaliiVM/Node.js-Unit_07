@@ -3,15 +3,16 @@
 const fs = require('fs');
 
 const f1 = (ar) => {
-    let data = JSON.stringify(ar1);
+    let data = JSON.stringify(ar);
     fs.writeFileSync('ar1.json', data);
+    console.log(data);
 };
 
 const ar1 = {
     test: 1,
     code: 2
 };
-// f1(ar1);
+f1(ar1);
 
 // f1(ar1); для проверки. Должен быть закомментирован
 
@@ -19,12 +20,13 @@ const ar1 = {
 //Создайте функцию f2, которая при запуске из массива ar2 создаем файл ar2.json в текущей папке.
 
 const f2 = (ar) => {
-    let data = JSON.stringify(ar2);
+    let data = JSON.stringify(ar);
     fs.writeFileSync('ar2.json', data);
+    console.log(data);
 };
 
 const ar2 = [1, 2, 3];
-// f2(ar2);
+f2(ar2);
 
 // f2(ar2); для проверки. Должен быть закомментирован
 
